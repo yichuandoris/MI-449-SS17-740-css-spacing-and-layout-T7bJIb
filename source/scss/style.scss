@@ -54,6 +54,8 @@ body {
 header {
   background: $color4;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 
   h1 {
     color: darken($color1, 10%);
@@ -61,18 +63,20 @@ header {
   }
 
   article {
-    margin-left: 30px;
+    flex-basis: 80%;
   }
 
   p {
     line-height: 30px;
     color: $color1;
+    padding-right: 30px;
   }
 
   img {
     height: 220px;
     max-height: 100%;
-    margin: 20px;
+    margin: 20px auto;
+    display: inline-block;
   }
 }
 
